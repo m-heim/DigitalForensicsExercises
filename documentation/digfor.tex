@@ -13,8 +13,21 @@
 \subsection{Useful links}
 Time for Truth: Forensic Analysis of NTFS Timestamps - \url{https://eprints.cs.univie.ac.at/7091/}
 \subsection{a) Which timestamps do Linux and Windows provide?}
+\paragraph{Linux}
+\begin{enumerate}
+    \item atime - Acess time
+    \item mtime - Modification time
+    \item ctime - Creation time
+\end{enumerate}
+
 \paragraph{Windows}
-Linux provides \cite{timestampsunderntfs} 
+\url{https://eprints.cs.univie.ac.at/7091/1/3465481.3470016.pdf}
+\begin{enumerate}
+    \item Modified - Modification time
+    \item Accessed - Access time
+    \item Changed - Change of file metadata via the MFT entry
+    \item Birth - Creation of file va the MFT entry
+\end{enumerate}
 
 
 \bibliographystyle{plain}
