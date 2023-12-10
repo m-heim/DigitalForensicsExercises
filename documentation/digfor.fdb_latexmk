@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex digfor"] 1702064979 "digfor.aux" "digfor.bbl" "digfor" 1702065020 0
+["bibtex digfor"] 1702230746 "digfor.aux" "digfor.bbl" "digfor" 1702230747 0
   "./refs.bib" 1700933479 1669 eded272f0eaad19443790937b1a49b29 ""
   "/usr/share/texmf-dist/bibtex/bst/base/plain.bst" 1689853683 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "digfor.aux" 1702065020 1675 f7d40d2646742d08285b18b02b8c55f7 "pdflatex"
+  "digfor.aux" 1702230746 2554 c37635847648c53f9751f7bbd0902c53 "pdflatex"
   (generated)
   "digfor.bbl"
   "digfor.blg"
   (rewritten before read)
-["pdflatex"] 1702065020 "/home/m-heim/DigitalForensicsExercises/documentation/digfor.tex" "digfor.pdf" "digfor" 1702065020 0
-  "/home/m-heim/DigitalForensicsExercises/documentation/digfor.tex" 1702065019 1887 3bb56451d229b714a8a4a2b28e7e4f15 ""
+["pdflatex"] 1702230746 "/home/m-heim/DigitalForensicsExercises/documentation/digfor.tex" "digfor.pdf" "digfor" 1702230747 0
+  "/home/m-heim/DigitalForensicsExercises/documentation/digfor.tex" 1702230744 3541 59b7976e780fe55fff78e1608be20b52 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1689853683 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1689853683 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1689853683 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -90,11 +90,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1689853683 40684 9b9ec0b4288972636ff6a3b9c4238efc ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1700934075 4483110 adb1e1d04498b9576f1f17c4219c5e03 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1700934046 6768061 8f447a46f261848a00a6df6033619064 ""
-  "digfor.aux" 1702065020 1675 f7d40d2646742d08285b18b02b8c55f7 "pdflatex"
-  "digfor.bbl" 1702064979 49 0eba253fc001332e731e8aba3f23127b "bibtex digfor"
-  "digfor.out" 1702065020 859 c6913ab1e9c9eb5d312503efac3c1020 "pdflatex"
-  "digfor.tex" 1702065019 1887 3bb56451d229b714a8a4a2b28e7e4f15 ""
-  "digfor.toc" 1702065020 670 846aed78bbf895210fc399478189e08a "pdflatex"
+  "digfor.aux" 1702230746 2554 c37635847648c53f9751f7bbd0902c53 "pdflatex"
+  "digfor.bbl" 1702230746 49 0eba253fc001332e731e8aba3f23127b "bibtex digfor"
+  "digfor.out" 1702230746 1253 dd7073ff987dcc298a0bead95dffedea "pdflatex"
+  "digfor.tex" 1702230744 3541 59b7976e780fe55fff78e1608be20b52 ""
+  "digfor.toc" 1702230746 1221 1c0f5d50cf4806fedfd4c799fb939c44 "pdflatex"
   (generated)
   "digfor.aux"
   "digfor.log"

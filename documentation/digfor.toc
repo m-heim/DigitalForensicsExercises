@@ -8,3 +8,11 @@
 \contentsline {paragraph}{Exercise description}{3}{section*.4}%
 \contentsline {subsection}{\numberline {2.1}a)}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}b)}{3}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Exercise 2.1: Forensic backup}{4}{section.3}%
+\contentsline {paragraph}{Exercise description}{4}{section*.5}%
+\contentsline {paragraph}{Backup partition as image}{4}{section*.6}%
+\contentsline {paragraph}{Backup partition splitted}{4}{section*.7}%
+\contentsline {section}{\numberline {4}Exercise 2.2: Hash validation}{4}{section.4}%
+\contentsline {paragraph}{Exercise}{4}{section*.8}%
+\contentsline {paragraph}{Generation of hash}{4}{section*.9}%
+\contentsline {paragraph}{Comparison of hashes}{4}{section*.10}%

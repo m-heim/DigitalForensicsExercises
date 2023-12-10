@@ -44,6 +44,36 @@ To mount a block device read in read only mode \Verb+mount -o ro <drive> /mnt+ m
 First automount has to be disabled via \Verb+mountvol.exe /N+. After that the media can be connected to the system. The next step is to enable the read only flag for the volume via \Verb+attributes volume set readonly+. Then the volume may be mounted.
 \url{https://superuser.com/questions/213005/how-to-mount-an-ntfs-partition-read-only-in-windows}
 
+\section{Exercise 2.1: Forensic backup}
+\paragraph{Exercise description}
+Erstellen Sie ein mit dem Tool dd [Howto] ein 50MB großes virtuelles Laufwerk und formatieren Sie diese mit FAT.
+Verwenden Sie hierfür das Tool mkfs [Howto]. Binden Sie das Laufwerk ein und kopieren Sie anschließend verschiedene,
+beliebige Dateien auf die Partition.
+Erstellen Sie eine forensische Kopie der Partition - verwenden Sie hierfür das Programm dcfldd [Website][Howto].
+Beachten Sie dabei, dass das Laufwerk nicht eingebunden sein darf. Der MD5-Hash-Wert der Kopie soll dabei in eine Datei
+geschrieben werden. Beschreiben Sie Ihr Vorgehen und die verwendeten Befehle. Wie sieht der Befehl aus, wenn Sie das
+Image in 10 MB große Dateien aufsplitten?
+\paragraph{Backup partition as image}
+The following command dumps the partition into an image file and saves the hash into a file
+
+\Verb+dcfldd if=imagetest.img of=imagedump.img hashlog=imagedumphash.md5 hash=md5+
+\paragraph{Backup partition splitted}
+This command additionally splits the contents into 10 MB files
+
+\Verb+dcfldd if=imagetest.img split=10000000 of=imagedump.img hashlog=imagedumphash.md5 hash=md5+
+
+\section{Exercise 2.2: Hash validation}
+
+\paragraph{Exercise}
+Validieren Sie den Hash-Wert aus Übung 2.1, indem Sie einen Hashwert des virtuellen Laufwerkes mit dem Programm
+md5sum erzeugen. Führen Sie anschließend einen automatisierten Vergleich der beiden Hash-Werte durch. Beschreiben
+Sie Ihr Vorgehen und die verwendeten Befehle.
+
+\paragraph{Generation of hash}
+md5sum imagetest.img > original.md5
+
+\paragraph{Comparison of hashes}
+cmp -n 32 --ignore-initial 0:14 original.md5 imagedumphash.md5
 
 \bibliographystyle{plain}
 \bibliography{refs}
