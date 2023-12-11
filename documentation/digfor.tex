@@ -6,6 +6,7 @@
 \usepackage{amssymb}
 \usepackage{hyperref}
 \usepackage{fancyvrb}
+\usepackage{listings}
 \author{Maximilian Heim}
 \title{Digital Forensics Exercises}
 \begin{document}
@@ -77,4 +78,319 @@ cmp -n 32 --ignore-initial 0:14 original.md5 imagedumphash.md5
 
 \bibliographystyle{plain}
 \bibliography{refs}
+
+\section{Exercise 2.7: In depth analysis SK}
+\subsection{a)}
+\paragraph{Partition table}
+\Verb+mmls uebung_2-7.dd+
+\begin{lstlisting}
+    DOS Partition Table
+    Offset Sector: 0
+    Units are in 512-byte sectors
+    
+          Slot      Start        End          Length       Description
+    000:  Meta      0000000000   0000000000   0000000001   Primary Table (#0)
+    001:  -------   0000000000   0000002047   0000002048   Unallocated
+    002:  000:000   0000002048   0000053247   0000051200   Linux (0x83)
+    003:  -------   0000053248   0000104447   0000051200   Unallocated
+    004:  000:002   0000104448   0000155647   0000051200   Win95 FAT32 (0x0b)
+    005:  Meta      0000155648   0000204799   0000049152   DOS Extended (0x05)
+    006:  Meta      0000155648   0000155648   0000000001   Extended Table (#1)
+    007:  -------   0000155648   0000157695   0000002048   Unallocated
+    008:  001:000   0000157696   0000204799   0000047104   Linux (0x83)
+\end{lstlisting}
+\subsection{b)}
+\paragraph{Partition 2}
+\Verb+fsstat -f ext3 -o 2048 uebung_2-7.dd+
+\begin{lstlisting}
+    FILE SYSTEM INFORMATION
+--------------------------------------------
+File System Type: Ext3
+Volume Name: 
+Volume ID: 627cea8be986a5a3b94e761f598eab5a
+
+Last Written at: 2012-03-12 13:40:49 (CET)
+Last Checked at: 2012-03-21 15:01:53 (CET)
+
+Last Mounted at: 2012-03-24 14:33:01 (CET)
+Unmounted properly
+
+Source OS: Linux
+Dynamic Structure
+Compat Features: Journal, Ext Attributes, Resize Inode, Dir Index
+InCompat Features: Filetype, 
+Read Only Compat Features: Sparse Super, 
+
+Journal ID: 00
+Journal Inode: 8
+
+METADATA INFORMATION
+--------------------------------------------
+Inode Range: 1 - 6401
+Root Directory: 2
+Free Inodes: 6379
+
+CONTENT INFORMATION
+--------------------------------------------
+Block Range: 0 - 25599
+Block Size: 1024
+Reserved Blocks Before Block Groups: 1
+Free Blocks: 12343
+
+BLOCK GROUP INFORMATION
+--------------------------------------------
+Number of Block Groups: 4
+Inodes per group: 1600
+Blocks per group: 8192
+
+Group: 0:
+  Inode Range: 1 - 1600
+  Block Range: 1 - 8192
+  Layout:
+    Super Block: 1 - 1
+    Group Descriptor Table: 2 - 2
+    Data bitmap: 102 - 102
+    Inode bitmap: 103 - 103
+    Inode Table: 104 - 303
+    Data Blocks: 304 - 8192
+  Free Inodes: 1579 (98%)
+  Free Blocks: 707 (8%)
+  Total Directories: 2
+
+Group: 1:
+  Inode Range: 1601 - 3200
+  Block Range: 8193 - 16384
+  Layout:
+    Super Block: 8193 - 8193
+    Group Descriptor Table: 8194 - 8194
+    Data bitmap: 8294 - 8294
+    Inode bitmap: 8295 - 8295
+    Inode Table: 8296 - 8495
+    Data Blocks: 8496 - 16384
+  Free Inodes: 1600 (100%)
+  Free Blocks: 3955 (48%)
+  Total Directories: 0
+
+Group: 2:
+  Inode Range: 3201 - 4800
+  Block Range: 16385 - 24576
+  Layout:
+    Data bitmap: 16385 - 16385
+    Inode bitmap: 16386 - 16386
+    Inode Table: 16387 - 16586
+    Data Blocks: 16387 - 16386, 16587 - 24576
+  Free Inodes: 1600 (100%)
+  Free Blocks: 6961 (84%)
+  Total Directories: 0
+
+Group: 3:
+  Inode Range: 4801 - 6400
+  Block Range: 24577 - 25599
+  Layout:
+    Super Block: 24577 - 24577
+    Group Descriptor Table: 24578 - 24578
+    Data bitmap: 24678 - 24678
+    Inode bitmap: 24679 - 24679
+    Inode Table: 24680 - 24879
+    Data Blocks: 24880 - 25599
+  Free Inodes: 1600 (100%)
+  Free Blocks: 720 (70%)
+  Total Directories: 0
+\end{lstlisting}
+
+\paragraph{Partition 4}
+\Verb+fsstat -f fat -o 104448 uebung_2-7.dd+
+\begin{lstlisting}
+    FILE SYSTEM INFORMATION
+--------------------------------------------
+File System Type: FAT16
+
+OEM Name: mkdosfs
+Volume ID: 0x38ba908
+Volume Label (Boot Sector):            
+Volume Label (Root Directory):
+File System Type Label: FAT16   
+
+Sectors before file system: 0
+
+File System Layout (in sectors)
+Total Range: 0 - 51199
+* Reserved: 0 - 3
+** Boot Sector: 0
+* FAT 0: 4 - 55
+* FAT 1: 56 - 107
+* Data Area: 108 - 51199
+** Root Directory: 108 - 139
+** Cluster Area: 140 - 51199
+
+METADATA INFORMATION
+--------------------------------------------
+Range: 2 - 817478
+Root Directory: 2
+
+CONTENT INFORMATION
+--------------------------------------------
+Sector Size: 512
+Cluster Size: 2048
+Total Cluster Range: 2 - 12766
+
+FAT CONTENTS (in sectors)
+--------------------------------------------
+144-11287 (11144) -> EOF
+11288-17183 (5896) -> EOF
+17184-20971 (3788) -> EOF
+20980-20983 (4) -> EOF
+20984-21687 (704) -> EOF
+21688-22391 (704) -> EOF
+22392-23099 (708) -> EOF
+23100-23219 (120) -> EOF
+23220-23339 (120) -> EOF
+23340-23459 (120) -> EOF
+\end{lstlisting}
+
+\paragraph{Partition 8}
+\Verb+fsstat -f ext -o 157696 uebung_2-7.dd+
+\begin{lstlisting}
+    FILE SYSTEM INFORMATION
+--------------------------------------------
+File System Type: Ext4
+Volume Name: 
+Volume ID: d787b67ed5e90caa3f4a161a87787e76
+
+Last Written at: 2012-03-12 13:40:49 (CET)
+Last Checked at: 2012-03-21 15:03:05 (CET)
+
+Last Mounted at: 2012-03-07 14:48:20 (CET)
+Unmounted properly
+Last mounted on: /home/cmoch/ueb_albsig/ext4
+
+Source OS: Linux
+Dynamic Structure
+Compat Features: Journal, Ext Attributes, Resize Inode, Dir Index
+InCompat Features: Filetype, Extents, Flexible Block Groups, 
+Read Only Compat Features: Sparse Super, Huge File, Extra Inode Size
+
+Journal ID: 00
+Journal Inode: 8
+
+METADATA INFORMATION
+--------------------------------------------
+Inode Range: 1 - 5905
+Root Directory: 2
+Free Inodes: 5883
+Inode Size: 128
+
+CONTENT INFORMATION
+--------------------------------------------
+Block Groups Per Flex Group: 16
+Block Range: 0 - 23551
+Block Size: 1024
+Reserved Blocks Before Block Groups: 1
+Free Blocks: 12620
+
+BLOCK GROUP INFORMATION
+--------------------------------------------
+Number of Block Groups: 3
+Inodes per group: 1968
+Blocks per group: 8192
+
+Group: 0:
+  Inode Range: 1 - 1968
+  Block Range: 1 - 8192
+  Layout:
+    Super Block: 1 - 1
+    Group Descriptor Table: 2 - 2
+    Group Descriptor Growth Blocks: 3 - 93
+    Data bitmap: 94 - 94
+    Inode bitmap: 110 - 110
+    Inode Table: 126 - 371
+    Data Blocks: 372 - 8192
+  Free Inodes: 1947 (98%)
+  Free Blocks: 7341 (89%)
+  Total Directories: 2
+
+Group: 1:
+  Inode Range: 1969 - 3936
+  Block Range: 8193 - 16384
+  Layout:
+    Super Block: 8193 - 8193
+    Group Descriptor Table: 8194 - 8194
+    Group Descriptor Growth Blocks: 8195 - 8285
+    Data bitmap: 95 - 95
+    Inode bitmap: 111 - 111
+    Inode Table: 372 - 617
+    Data Blocks: 618 - 16384
+  Free Inodes: 1968 (100%)
+  Free Blocks: 358 (4%)
+  Total Directories: 0
+
+Group: 2:
+  Inode Range: 3937 - 5904
+  Block Range: 16385 - 23551
+  Layout:
+    Data bitmap: 96 - 96
+    Inode bitmap: 112 - 112
+    Inode Table: 618 - 863
+    Data Blocks: 864 - 23551
+  Free Inodes: 1968 (100%)
+  Free Blocks: 4921 (68%)
+  Total Directories: 0
+\end{lstlisting}
+\subsection{c)}
+\paragraph{Partition 2}
+\Verb+fls -o 2048 -f ext uebung_2-7.dd+
+\begin{lstlisting}
+d/d 11: lost+found
+r/r 12: ebc36c92-3886-11e1-af06-5c260a3d892a.mp3
+r/r 13: ebc89640-3886-11e1-af06-5c260a3d892a.mp3
+r/r 14: 4cafbc82-389a-11e1-af06-5c260a3d892a.mp3
+r/r 15: a5df3984-38bf-11e1-af06-5c260a3d892a.txt
+r/r * 16: 7e070e10-38ff-11e1-af06-5c260a3d892a.txt
+r/r * 17: 64349836-3936-11e1-af06-5c260a3d892a.txt
+r/r 18: 2f2e3c1c-3942-11e1-af06-5c260a3d892a.jpg
+r/r 19: d0b8aa62-3948-11e1-af06-5c260a3d892a.jpg
+r/r 20: 4f20572c-395f-11e1-af06-5c260a3d892a.bmp
+r/r 21: ded49934-397b-11e1-af06-5c260a3d892a.txt
+r/r 22: e8ca3836-39bc-11e1-af06-5c260a3d892a.txt
+r/r 23: cb04b604-39cc-11e1-af06-5c260a3d892a.txt
+V/V 6401: $OrphanFiles
+\end{lstlisting}
+\paragraph{Partition 4}
+\Verb+fls -o 104448 -f fat uebung_2-7.dd+
+\begin{lstlisting}
+r/r 7: d1f7f3b0-6891-11e1-af06-5c260a3d892a.mp3
+r/r 12: d1faea98-6891-11e1-af06-5c260a3d892a.mp3
+r/r 17: cb8b76b8-68d3-11e1-af06-5c260a3d892a.mp3
+r/r * 22: 7dc51cc0-68da-11e1-af06-5c260a3d892a.txt
+r/r * 27: 3d211488-68eb-11e1-af06-5c260a3d892a.txt
+r/r 32: 8b103ba4-6938-11e1-af06-5c260a3d892a.txt
+r/r 37: 18fb26fe-6957-11e1-af06-5c260a3d892a.bmp
+r/r 42: 3cd504f6-6983-11e1-af06-5c260a3d892a.bmp
+r/r 47: 9cf197c2-69cf-11e1-af06-5c260a3d892a.bmp
+r/r 52: 237896fa-6a0d-11e1-af06-5c260a3d892a.txt
+r/r 57: 3d86f27e-6a50-11e1-af06-5c260a3d892a.txt
+r/r 62: 4df1a002-6a5d-11e1-af06-5c260a3d892a.txt
+v/v 817475: $MBR
+v/v 817476: $FAT1
+v/v 817477: $FAT2
+V/V 817478: $OrphanFiles
+\end{lstlisting}
+\paragraph{Partition 8}
+\Verb+fls -o 157696 -f ext uebung_2-7.dd+
+\begin{lstlisting}
+d/d 11: lost+found
+r/r 12: 77336f00-6b38-11e1-af06-5c260a3d892a.mp3
+r/r 13: 7735ba62-6b38-11e1-af06-5c260a3d892a.mp3
+r/r 14: 5562411e-6b86-11e1-af06-5c260a3d892a.mp3
+r/r 15: 24012126-6bb8-11e1-af06-5c260a3d892a.txt
+r/r * 16: 4e249608-6bf5-11e1-af06-5c260a3d892a.txt
+r/r * 17: 876a0370-6c0f-11e1-af06-5c260a3d892a.txt
+r/r 18: 2c430cc4-6c25-11e1-af06-5c260a3d892a.bmp
+r/r 19: 6e8056fa-6c4d-11e1-af06-5c260a3d892a.jpg
+r/r 20: 8ae5a6c6-6c78-11e1-af06-5c260a3d892a.gif
+r/r 21: 901b0e08-6cc1-11e1-af06-5c260a3d892a.txt
+r/r 22: e26033d4-6cc9-11e1-af06-5c260a3d892a.txt
+r/r 23: 4e499582-6cd8-11e1-af06-5c260a3d892a.txt
+V/V 5905: $OrphanFiles
+\end{lstlisting}
 \end{document}
