@@ -1,12 +1,10 @@
 \documentclass[10pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
 \usepackage{hyperref}
 \usepackage{fancyvrb}
 \usepackage{listings}
+\usepackage{/home/m-heim/DigitalForensicsExercises/documentation/mhlm/mhlm}
 \author{Maximilian Heim}
 \title{Digital Forensics Exercises}
 \begin{document}
@@ -57,11 +55,11 @@ Image in 10 MB große Dateien aufsplitten?
 \paragraph{Backup partition as image}
 The following command dumps the partition into an image file and saves the hash into a file
 
-\Verb+dcfldd if=imagetest.img of=imagedump.img hashlog=imagedumphash.md5 hash=md5+
+\mhlmInlineVerb{dcfldd if=imagetest.img of=imagedump.img hashlog=image.md5 hash=md5}
 \paragraph{Backup partition splitted}
 This command additionally splits the contents into 10 MB files
 
-\Verb+dcfldd if=imagetest.img split=10000000 of=imagedump.img hashlog=imagedumphash.md5 hash=md5+
+\mhlmInlineVerb{dcfldd if=imagetest.img split=10000000 of=imagedump.img hashlog=image.md5 hash=md5}
 
 \section{Exercise 2.2: Hash validation}
 
