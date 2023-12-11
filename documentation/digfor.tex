@@ -57,7 +57,7 @@ The following command dumps the partition into an image file and saves the hash 
 
 \mhlmInlineVerb{dcfldd if=imagetest.img of=imagedump.img hashlog=image.md5 hash=md5}
 \paragraph{Backup partition splitted}
-This command additionally splits the contents into 10 MB files
+Dieses Kommando teilt das Volume in 10 MB große Dateien auf
 
 \mhlmInlineVerb{dcfldd if=imagetest.img split=10000000 of=imagedump.img hashlog=image.md5 hash=md5}
 
@@ -77,14 +77,18 @@ cmp -n 32 --ignore-initial 0:14 original.md5 imagedumphash.md5
 \bibliographystyle{plain}
 \bibliography{refs}
 
+\section{Aufgabe 2.6 EnCase}
+\subsection{Schlüsselwortsuche}
+Mittels der Schlüsselwortsuche in Forensic Explorer konnten keine Ergebnisse für "Treffen" gefunden werden. Mit Autopsy konnte jedoch der String "Treffen am Feuersee" in \Verb+Dokumente/Planung/Mappe1.xlsx+ gefunden werden. Die Datei weißt einen MD5 Hash von \Verb+db92101b4aaed3e95f68db3241f78ffe+ auf.
+
 \section{Exercise 2.7: In depth analysis SK}
 \subsection{a)}
 \paragraph{Partition table}
 \Verb+mmls uebung_2-7.dd+
 \begin{lstlisting}
-    DOS Partition Table
-    Offset Sector: 0
-    Units are in 512-byte sectors
+DOS Partition Table
+Offset Sector: 0
+Units are in 512-byte sectors
     
           Slot      Start        End          Length       Description
     000:  Meta      0000000000   0000000000   0000000001   Primary Table (#0)

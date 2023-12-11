@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.11.25)  11 DEC 2023 17:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.11.25)  11 DEC 2023 19:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -310,36 +310,16 @@ Overfull \hbox (0.74712pt too wide) in paragraph at lines 62--63
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 )
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 89--90
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 93--94
 [][][][][][][][][][][][][][][][][][][]
  []
 
-
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 90--91
-[][][][][][][][][][][][][][][][][][][][][][][]
- []
-
-
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 91--92
-[][][][][][][][][][][][][][][][][][][][][][][]
- []
-
-
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 92--93
-[][][][][][][][][][][][][][][][][][][][][][][]
- []
-
-
-Overfull \hbox (9.0036pt too wide) in paragraph at lines 93--94
-[][][][][][][][][][][][][][][][][][][][][][][]
- []
-
-
+[4{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 Overfull \hbox (9.0036pt too wide) in paragraph at lines 94--95
 [][][][][][][][][][][][][][][][][][][][][][][]
  []
 
-[4{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+
 Overfull \hbox (9.0036pt too wide) in paragraph at lines 95--96
 [][][][][][][][][][][][][][][][][][][][][][][]
  []
@@ -360,49 +340,69 @@ Overfull \hbox (9.0036pt too wide) in paragraph at lines 98--99
  []
 
 
-Overfull \hbox (45.00397pt too wide) in paragraph at lines 118--119
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 99--100
+[][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 100--101
+[][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 101--102
+[][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (9.0036pt too wide) in paragraph at lines 102--103
+[][][][][][][][][][][][][][][][][][][][][][][]
+ []
+
+
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 122--123
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[5] [6]
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 237.
+[5] [6] [7]
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 241.
  (/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 237.
- [7]
-Overfull \hbox (45.00397pt too wide) in paragraph at lines 267--268
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 241.
+
+Overfull \hbox (45.00397pt too wide) in paragraph at lines 271--272
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (15.00366pt too wide) in paragraph at lines 268--269
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 272--273
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (63.00415pt too wide) in paragraph at lines 269--271
+Overfull \hbox (63.00415pt too wide) in paragraph at lines 273--275
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[8] [9] [10] (./digfor.aux)
+[8] [9] [10] [11] (./digfor.aux)
 Package rerunfilecheck Info: File `digfor.out' has not changed.
-(rerunfilecheck)             Checksum: 4DFA11A41AA44A1E67203A6383A60EEE;1573.
+(rerunfilecheck)             Checksum: EAF996226A0390CE486CE103508D04E3;1864.
  ) 
 Here is how much of TeX's memory you used:
- 13378 strings out of 477985
- 218953 string characters out of 5840057
- 1925388 words of memory out of 5000000
- 33121 multiletter control sequences out of 15000+600000
+ 13383 strings out of 477985
+ 219010 string characters out of 5840057
+ 1920388 words of memory out of 5000000
+ 33123 multiletter control sequences out of 15000+600000
  517045 words of font info for 48 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,6n,76p,425b,2051s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,76p,425b,2043s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on digfor.pdf (10 pages, 142850 bytes).
+Output written on digfor.pdf (11 pages, 146032 bytes).
 PDF statistics:
- 538 PDF objects out of 1000 (max. 8388607)
- 504 compressed objects within 6 object streams
- 334 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 553 PDF objects out of 1000 (max. 8388607)
+ 518 compressed objects within 6 object streams
+ 337 named destinations out of 1000 (max. 500000)
+ 105 words of extra memory for PDF output out of 10000 (max. 10000000)
 
