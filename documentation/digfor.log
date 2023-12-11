@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.11.25)  11 DEC 2023 17:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.11.25)  11 DEC 2023 17:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -231,32 +231,34 @@ LaTeX Info: Redefining \labelcpageref on input line 2370.
 Package cleveref Info: `listings' support loaded on input line 3131.
 Package cleveref Info: include cross-reference names in hyperlinks on input line 7836.
 Package cleveref Info: include cross-reference names in hyperlinks on input line 7852.
-)) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+)) (/usr/share/texmf-dist/tex/latex/xurl/xurl.sty
+Package: xurl 2022/01/09 v 0.10 modify URL breaks
+) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count283
 \l__pdf_internal_box=\box54
 ) (./digfor.aux)
 \openout1 = `digfor.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-Package hyperref Info: Link coloring OFF on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+Package hyperref Info: Link coloring OFF on input line 11.
  (./digfor.out) (./digfor.out)
 \@outlinefile=\write4
 \openout4 = `digfor.out'.
@@ -277,11 +279,11 @@ Package hyperref Info: Link coloring OFF on input line 10.
 \everyMPtoPDFconversion=\toks21
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 12.
+(Font)              <12> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 12.
+(Font)              <8> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 12.
+(Font)              <6> on input line 13.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./digfor.toc
@@ -293,17 +295,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write5
 \openout5 = `digfor.toc'.
 
- [2]
-Overfull \hbox (15.63043pt too wide) in paragraph at lines 27--28
- []\OT1/cmr/bx/n/10 Windows[] []$\OT1/cmtt/m/n/10 https : / / eprints . cs . univie . ac . at / 7091 / 1 / 3465481 . 3470016 . pdf$[] 
- []
-
-
-Overfull \hbox (176.9034pt too wide) in paragraph at lines 43--45
-\OT1/cmr/m/n/10 mounted. []$\OT1/cmtt/m/n/10 https : / / superuser . com / questions / 213005 / how-[]to-[]mount-[]an-[]ntfs-[]partition-[]read-[]only-[]in-[]windows$[] 
- []
-
-[3]
+ [2] [3]
 Overfull \hbox (0.74712pt too wide) in paragraph at lines 58--59
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  []
@@ -327,7 +319,7 @@ Overfull \hbox (9.0036pt too wide) in paragraph at lines 90--91
 [][][][][][][][][][][][][][][][][][][][][][][]
  []
 
-[4{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+
 Overfull \hbox (9.0036pt too wide) in paragraph at lines 91--92
 [][][][][][][][][][][][][][][][][][][][][][][]
  []
@@ -347,7 +339,7 @@ Overfull \hbox (9.0036pt too wide) in paragraph at lines 94--95
 [][][][][][][][][][][][][][][][][][][][][][][]
  []
 
-
+[4{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 Overfull \hbox (9.0036pt too wide) in paragraph at lines 95--96
 [][][][][][][][][][][][][][][][][][][][][][][]
  []
@@ -372,14 +364,14 @@ Overfull \hbox (45.00397pt too wide) in paragraph at lines 118--119
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[5] [6] [7]
+[5] [6]
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 237.
  (/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 237.
-
+ [7]
 Overfull \hbox (45.00397pt too wide) in paragraph at lines 267--268
 [][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -394,23 +386,23 @@ Overfull \hbox (63.00415pt too wide) in paragraph at lines 269--271
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[8] [9] [10] [11] (./digfor.aux)
+[8] [9] [10] (./digfor.aux)
 Package rerunfilecheck Info: File `digfor.out' has not changed.
-(rerunfilecheck)             Checksum: D387F2BA2C7FA2E4EE3849F651094F94;1694.
+(rerunfilecheck)             Checksum: 4DFA11A41AA44A1E67203A6383A60EEE;1573.
  ) 
 Here is how much of TeX's memory you used:
- 13354 strings out of 477985
- 218323 string characters out of 5840057
- 1920388 words of memory out of 5000000
- 33099 multiletter control sequences out of 15000+600000
+ 13378 strings out of 477985
+ 218953 string characters out of 5840057
+ 1925388 words of memory out of 5000000
+ 33121 multiletter control sequences out of 15000+600000
  517045 words of font info for 48 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,6n,76p,425b,2035s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,76p,425b,2051s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on digfor.pdf (11 pages, 143117 bytes).
+Output written on digfor.pdf (10 pages, 142850 bytes).
 PDF statistics:
- 546 PDF objects out of 1000 (max. 8388607)
- 511 compressed objects within 6 object streams
- 336 named destinations out of 1000 (max. 500000)
- 97 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 538 PDF objects out of 1000 (max. 8388607)
+ 504 compressed objects within 6 object streams
+ 334 named destinations out of 1000 (max. 500000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex digfor"] 1702312714 "digfor.aux" "digfor.bbl" "digfor" 1702313147 0
+["bibtex digfor"] 1702313443 "digfor.aux" "digfor.bbl" "digfor" 1702313472 0
   "./refs.bib" 1700933479 1669 eded272f0eaad19443790937b1a49b29 ""
   "/usr/share/texmf-dist/bibtex/bst/base/plain.bst" 1689853683 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "digfor.aux" 1702313147 3700 0fa1689c23caeb903122496309a32669 "pdflatex"
+  "digfor.aux" 1702313472 3579 8fd6cbe700e425065485f75d17e84f00 "pdflatex"
   (generated)
   "digfor.bbl"
   "digfor.blg"
   (rewritten before read)
-["pdflatex"] 1702313146 "/home/m-heim/DigitalForensicsExercises/documentation/digfor.tex" "digfor.pdf" "digfor" 1702313147 0
-  "/home/m-heim/DigitalForensicsExercises/documentation/digfor.tex" 1702313146 12502 d666cad85ad40fa15ef055c2cbdf8a07 ""
+["pdflatex"] 1702313471 "/home/m-heim/DigitalForensicsExercises/documentation/digfor.tex" "digfor.pdf" "digfor" 1702313472 0
+  "/home/m-heim/DigitalForensicsExercises/documentation/digfor.tex" 1702313471 12442 40602f11d38eb7a52597898877ed15ce ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1689853683 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1689853683 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1689853683 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -83,15 +83,16 @@
   "/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1689853683 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "/usr/share/texmf-dist/tex/latex/url/url.sty" 1689853683 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1689853683 56148 51a9a8571c07b9921892ae11063ae853 ""
+  "/usr/share/texmf-dist/tex/latex/xurl/xurl.sty" 1689853683 4675 e4b8c405820368c2dfb03526e16d725a ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1689853683 40684 9b9ec0b4288972636ff6a3b9c4238efc ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1700934075 4483110 adb1e1d04498b9576f1f17c4219c5e03 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1700934046 6768061 8f447a46f261848a00a6df6033619064 ""
-  "digfor.aux" 1702313147 3700 0fa1689c23caeb903122496309a32669 "pdflatex"
-  "digfor.bbl" 1702312714 49 0eba253fc001332e731e8aba3f23127b "bibtex digfor"
-  "digfor.out" 1702313147 1694 d387f2ba2c7fa2e4ee3849f651094f94 "pdflatex"
-  "digfor.tex" 1702313146 12502 d666cad85ad40fa15ef055c2cbdf8a07 ""
-  "digfor.toc" 1702313147 1915 56ec1d6d943062a4aed82133860f6a8d "pdflatex"
-  "mhlm/mhlm.sty" 1702313078 3213 72da80638d8bbbef5ad8881941f95be9 ""
+  "digfor.aux" 1702313472 3579 8fd6cbe700e425065485f75d17e84f00 "pdflatex"
+  "digfor.bbl" 1702313443 49 0eba253fc001332e731e8aba3f23127b "bibtex digfor"
+  "digfor.out" 1702313472 1573 4dfa11a41aa44a1e67203a6383a60eee "pdflatex"
+  "digfor.tex" 1702313471 12442 40602f11d38eb7a52597898877ed15ce ""
+  "digfor.toc" 1702313472 1835 a939651e8a28516a023427ecc5c25069 "pdflatex"
+  "mhlm/mhlm.sty" 1702313206 2847 49ed1f09303cecd0d88b26ba504ed923 ""
   (generated)
   "digfor.aux"
   "digfor.log"

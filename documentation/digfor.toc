@@ -1,15 +1,14 @@
 \babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {1}Exercise 1.1}{3}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Useful links}{3}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}a) Which timestamps do Linux and Windows provide?}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.1}a) Which timestamps do Linux and Windows provide?}{3}{subsection.1.1}%
 \contentsline {paragraph}{Linux}{3}{section*.2}%
 \contentsline {paragraph}{Windows}{3}{section*.3}%
 \contentsline {section}{\numberline {2}Exercise 1.3: Read only}{3}{section.2}%
 \contentsline {paragraph}{Exercise description}{3}{section*.4}%
 \contentsline {subsection}{\numberline {2.1}a)}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}b)}{3}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Exercise 2.1: Forensic backup}{4}{section.3}%
-\contentsline {paragraph}{Exercise description}{4}{section*.5}%
+\contentsline {section}{\numberline {3}Exercise 2.1: Forensic backup}{3}{section.3}%
+\contentsline {paragraph}{Exercise description}{3}{section*.5}%
 \contentsline {paragraph}{Backup partition as image}{4}{section*.6}%
 \contentsline {paragraph}{Backup partition splitted}{4}{section*.7}%
 \contentsline {section}{\numberline {4}Exercise 2.2: Hash validation}{4}{section.4}%
@@ -23,7 +22,7 @@
 \contentsline {paragraph}{Partition 2}{5}{section*.13}%
 \contentsline {paragraph}{Partition 4}{7}{section*.14}%
 \contentsline {paragraph}{Partition 8}{8}{section*.15}%
-\contentsline {subsection}{\numberline {5.3}c)}{10}{subsection.5.3}%
-\contentsline {paragraph}{Partition 2}{10}{section*.16}%
+\contentsline {subsection}{\numberline {5.3}c)}{9}{subsection.5.3}%
+\contentsline {paragraph}{Partition 2}{9}{section*.16}%
 \contentsline {paragraph}{Partition 4}{10}{section*.17}%
 \contentsline {paragraph}{Partition 8}{10}{section*.18}%
